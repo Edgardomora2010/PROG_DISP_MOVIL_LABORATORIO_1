@@ -1,10 +1,8 @@
 import { Drawer } from "expo-router/drawer";
 
-export default function DrawerNavigator() {
+export default function DrawerLayout() {
   return (
     <Drawer>
-
-      {/* Home screen */}
       <Drawer.Screen
         name="(tabs)"
         options={{
@@ -12,15 +10,13 @@ export default function DrawerNavigator() {
         }}
       />
 
-      {/* Login screen */}
       <Drawer.Screen
-        name="Login"
+        name="login"
         options={{
           title: "Login",
         }}
       />
 
-      {/* About screen */}
       <Drawer.Screen
         name="about"
         options={{
@@ -28,6 +24,5 @@ export default function DrawerNavigator() {
         }}
       />
     </Drawer>
-
   );
 }
