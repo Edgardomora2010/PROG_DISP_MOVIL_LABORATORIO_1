@@ -10,7 +10,7 @@ export default function HomeScreen() {
       </Text>
 
       <Text>
-        Consulte el catálogo de libros mediante las pestañas de navegación.
+        Consulte el catálogo de libros utilizando la navegación.
       </Text>
     </View>
   );
