@@ -2,11 +2,22 @@ import { Drawer } from "expo-router/drawer";
 
 export default function DrawerLayout() {
   return (
-    <Drawer>
+  
+  <Drawer
+  screenOptions={{
+    drawerContentStyle: {
+      backgroundColor: "#F3EBDD",
+    },
+    drawerActiveBackgroundColor: "#A8B5A2",
+    drawerActiveTintColor: "#FFFFFF",
+    drawerInactiveTintColor: "#5C4635",
+  }}
+>
+
       <Drawer.Screen
         name="(tabs)"
         options={{
-          title: "Inicio",
+          title: "Home",
         }}
       />
 

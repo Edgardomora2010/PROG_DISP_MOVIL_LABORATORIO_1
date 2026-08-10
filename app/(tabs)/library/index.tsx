@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { FlatList, Pressable, Text, View } from "react-native";
+import { FlatList, Image, Pressable, Text, View } from "react-native";
 import { libraryData } from "../../../data/libraryData";
 import { book } from "../../../models/book";
 import { globalStyles } from "../../../styles/globalStyles";
@@ -20,6 +20,7 @@ export default function LibraryScreen() {
         });
       }}
     >
+      {/* Muestra la información del libro en la tarjeta */}
       <Text style={globalStyles.bookTitle}>{item.title}</Text>
       <Text style={globalStyles.bookAuthor}>{item.author}</Text>
       <Text style={globalStyles.bookInfo}>
@@ -31,8 +32,11 @@ export default function LibraryScreen() {
 
   return (
     <View style={globalStyles.container}>
-     
-     
+      <Image
+        source={require("../../../assets/images/library.png")}
+        style={globalStyles.libraryImage}
+      />
+
       <Text style={globalStyles.subtitle}>
         {libraryData.length} libros disponibles
       </Text>
